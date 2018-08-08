@@ -1,0 +1,19 @@
+.image {
+    width: 150px;
+    height: 150px;
+}
+
+.grid {
+    width: 450px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.col {
+    padding: 0;
+    margin: 0px;
+    flex-grow: unset;
+}

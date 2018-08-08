@@ -1,0 +1,22 @@
+<button class="btn btn-primary" (click)='onStart()'>Start game</button>
+
+<div class='container'>
+
+  <div *ngIf='win '>
+    Congratulations, you solved the puzzle in a total of {{count}} moves
+  </div>
+
+  <div class="grid">
+    <div class="row" *ngFor='let i of [0,1,2]'>
+        
+      <div class="col droppable" *ngFor='let j of [0,1,2]' id='{{i * 3 + j}}' >
+        <img class='image draggable ' src='assets/images/{{images[i * 3 + j].image}}' id='{{images[i * 3 + j].id}}' />
+      </div>
+
+    </div>
+
+  </div>
+
+  <div>Total moves {{count}}</div>
+
+</div>
